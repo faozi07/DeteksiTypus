@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "916138723498",
+    "firebase_url": "https://typus-fc228.firebaseio.com",
+    "project_id": "typus-fc228",
+    "storage_bucket": "typus-fc228.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916138723498:android:977d74f6c2d119c3",
+        "android_client_info": {
+          "package_name": "com.android.DeteksiTypus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916138723498-gdn8fo0t40tffei9rj3vs0lgsgg0h7nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIVUq3wTGjJwqCRgd59qz5Qrn7Qs-3L04"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

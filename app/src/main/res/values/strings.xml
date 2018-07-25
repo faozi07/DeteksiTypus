@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Deteksi Tipes</string>
+    <string-array name="pertanyaanTipes">
+        <item>Apakah Anda merasakan demam yang terus mengalami kenaikan pada malam hari ?</item>
+        <item>Apakah Anda merasakan sakit kepala dari mulai bagian sekitar mata dan bagian belakang hingga membuat Anda susah menjalankan aktifitas ?</item>
+        <item>Apakah nafsu makan Anda menurun hingga tubuh terasa lemah ?</item>
+        <item>Apakah Anda mengalami gangguan pencernaan hingga menyebabkan sembelit atau diare ?</item>
+        <item>Apakah muncul batuk kering yang tidak bisa disembuhkan dengan obat batuk biasa ?</item>
+        <item>Apakah timbul bercak merah atau ruam-ruam disekitaran kulit kaki dan tangan ?</item>
+        <item>Apakah Anda merasakan perut Anda bengkak dan lebih keras ?</item>
+    </string-array>
+    <string-array name="hasilTipes">
+        <item>Mengalami demam yang terus mengalami kenaikan di malam hari</item>
+        <item>Mengalami sakit kepala mulai bagian sekitar mata dan bagian belakang hingga membuat susah menjalankan aktifitas</item>
+        <item>Nafsu makan terus menurun hingga tubuh terasa lemah</item>
+        <item>Mengalami gangguan pencernaan hingga menyebabkan sembelit atau diare</item>
+        <item>Muncul batuk kering yang tidak bisa disembuhkan dengan obat batuk biasa</item>
+        <item>Timbul bercak merah atau ruam-ruam disekitaran kulit kaki dan tangan</item>
+        <item>Merasakan perut bengkak dan lebih keras</item>
+    </string-array>
+</resources>
