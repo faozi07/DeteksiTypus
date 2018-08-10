@@ -37,7 +37,7 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
     Button btnNext, btnPlay;
     ImageView imgMusic;
     String[] pertanyaan = {}, keterangan = {};
-    int noSoal = 0;
+    int noSoal = 0, nomor = 0;
     boolean isYes = false, isPilih = false;
     public static boolean is1 = false, is2 = false, is3 = false, is4 = false, is5 = false, is6 = false, is7 = false, is8 = false, is9 = false, is10 = false,
             is11 = false, is12 = false, is13 = false, is14 = false, is15 = false, is16 = false, is17 = false;
@@ -188,7 +188,8 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
                 if (isPilih) {
                     isPilih = false;
                     if (isYes) {
-                        StaticVars.arrayDiagnosa.add(keterangan[noSoal]);
+                        nomor = nomor+1;
+                        StaticVars.arrayDiagnosa.add(String.valueOf(nomor)+". "+keterangan[noSoal]);
                     }
                     noSoal = noSoal + 1;
                     if (noSoal < pertanyaan.length) {
