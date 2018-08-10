@@ -33,7 +33,7 @@ import java.util.Date;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    TextView teksNama, teksUsername, teksUmur, teksHasilDiagnosa;
+    TextView teksNama, teksUsername, teksUmur, teksJenkel, teksHasilDiagnosa;
     ImageView imgProfil;
     GalleryPhoto galleryPhoto;
     String photoPath = "", strMyImagePath = "";
@@ -52,6 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
         teksUmur = findViewById(R.id.teksUmur);
         teksHasilDiagnosa = findViewById(R.id.hasilDiagnosa);
         teksUsername = findViewById(R.id.teksUsername);
+        teksJenkel = findViewById(R.id.teksJenkel);
         imgProfil = findViewById(R.id.imgProfil);
         SharedPreferences spLogin = getSharedPreferences(StaticVars.SP_LOGIN, Context.MODE_PRIVATE);
         avatarFile = new File(spLogin.getString(StaticVars.SP_LOGIN_AVATAR,""));
@@ -61,6 +62,7 @@ public class ProfileActivity extends AppCompatActivity {
         teksUsername.setText(spLogin.getString(StaticVars.SP_LOGIN_USERNAME,""));
         teksNama.setText(spLogin.getString(StaticVars.SP_LOGIN_NAMA,""));
         teksUmur.setText(spLogin.getString(StaticVars.SP_LOGIN_UMUR,""));
+        teksJenkel.setText(spLogin.getString(StaticVars.SP_LOGIN_JENIS_KELAMIN,""));
         teksHasilDiagnosa.setText(spLogin.getString(StaticVars.SP_LOGIN_HASIL_DIAGNOSA,""));
         imgProfil.setOnClickListener(new View.OnClickListener() {
             @Override

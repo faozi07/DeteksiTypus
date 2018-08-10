@@ -103,9 +103,9 @@ public class UserDB extends SQLiteOpenHelper {
                 " WHERE " + USER_NAME + "='" + username + "' AND "+PASSWORD+" = '"+password+"'", null);
         if (cursor.moveToFirst()) {
             do {
-                LoginActivity.isTerdaftar = cursor.getString(0) != null && username.equals(cursor.getString(0));
-                LoginActivity.username = cursor.getString(0);
-                LoginActivity.nama = cursor.getString(2);
+                LoginActivity.isTerdaftar = cursor.getString(1) != null && username.equals(cursor.getString(1));
+                LoginActivity.username = cursor.getString(1);
+                LoginActivity.nama = cursor.getString(0);
                 LoginActivity.umur = cursor.getString(3);
                 LoginActivity.jenkel = cursor.getString(4);
             } while (cursor.moveToNext());

@@ -216,18 +216,18 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
                                 if (is13) {
                                     if (is14) {
                                         if (is15 && is16) {
-                                            hasilDiagnosa("Anda Teridentifikasi Tipes", StaticVars.solusiGejala2,StaticVars.arrayDiagnosa);
+                                            hasilDiagnosa("Anda Teridentifikasi Tipes", StaticVars.solusiGejala1,StaticVars.arrayDiagnosa);
                                         } else {
-                                            hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Keempat", StaticVars.solusiGejala2, StaticVars.arrayDiagnosa);
+                                            hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Keempat", StaticVars.solusiGejala1, StaticVars.arrayDiagnosa);
                                         }
                                     } else {
-                                        hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Ketiga", StaticVars.solusiGejala2, StaticVars.arrayDiagnosa);
+                                        hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Ketiga", StaticVars.solusiGejala1, StaticVars.arrayDiagnosa);
                                     }
                                 } else {
-                                    hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Kedua", StaticVars.solusiGejala2, StaticVars.arrayDiagnosa);
+                                    hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Kedua", StaticVars.solusiGejala1, StaticVars.arrayDiagnosa);
                                 }
                             } else {
-                                hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Pertama", StaticVars.solusiGejala1, StaticVars.arrayDiagnosa);
+                                hasilDiagnosa("Anda Teridentifikasi Gejala Tipes Minggu Pertama", StaticVars.solusiGejala2, StaticVars.arrayDiagnosa);
                             }
                         } else {
                             hasilDiagnosa("Anda Tidak Teridentifikasi Tipes", StaticVars.solusiTidakTipes, StaticVars.arrayDiagnosa);
