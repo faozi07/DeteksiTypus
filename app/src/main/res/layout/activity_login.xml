@@ -39,11 +39,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:passwordToggleEnabled="true">
+                android:textColor="#777"
+                android:textColorHint="#bbb">
 
                 <EditText
                     android:id="@+id/username"
                     android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background_normal"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
@@ -51,26 +53,28 @@
                     android:inputType="text"
                     android:maxLines="1"
                     android:padding="10dp"
-                    android:textColor="#333"
-                    android:textColorHint="#bbbbbb" />
+                    android:textColor="#777" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="#777"
+                android:textColorHint="#bbb"
+                app:passwordToggleTint="#777"
                 app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/textPassword"
+                    android:background="@android:drawable/editbox_background_normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:padding="10dp"
-                    android:textColor="#333"
-                    android:textColorHint="#bbbbbb" />
+                    android:textColor="#777" />
             </android.support.design.widget.TextInputLayout>
 
             <Button

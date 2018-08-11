@@ -28,7 +28,7 @@
                 android:textAlignment="center"
                 android:textStyle="italic"
                 android:textSize="10sp"
-                android:text="Anda bisa mengganti foto Anda"/>
+                android:text="Anda bisa mengganti foto"/>
 
             <TextView
                 android:id="@+id/teksUsername"
