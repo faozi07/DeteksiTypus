@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Build;
 import android.os.Handler;
@@ -48,6 +49,7 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
     private int ss31, ss32, ss33, ss34, ss35, ss36, ss37, ss38, ss39, ss40;
     private int ss41, ss42, ss43, ss44, ss45, ss46, ss47, ss48, ss49, ss50;
     SoundPool sp;
+    MediaPlayer mpSound1 = new MediaPlayer();
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -58,6 +60,9 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("Diagnosis");
         }
+        mpSound1 = MediaPlayer.create(SoalDiagnosisActivity.this, R.raw.sp1);
+        mpSound1.start();
+
         pertanyaan = getResources().getStringArray(R.array.pertanyaanTipes);
         keterangan = getResources().getStringArray(R.array.hasilTipes);
         teksPertanyaan = findViewById(R.id.pertanyaan);
@@ -247,7 +252,6 @@ public class SoalDiagnosisActivity extends AppCompatActivity {
         }
         setMusic();
         startAnimationPlay();
-        play();
     }
 
     private void setMusic() {

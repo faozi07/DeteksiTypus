@@ -3,6 +3,7 @@ package com.android.DeteksiTypus;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Build;
 import android.os.Handler;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    MediaPlayer mpSound1 = new MediaPlayer();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,14 +23,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        SoundPool sp;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            sp = new SoundPool.Builder().setMaxStreams(5).build();
-        } else {
-            sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
-        }
-        int sound = sp.load(SplashScreenActivity.this, R.raw.splashscreen, 1);
-        sp.play(sound, 1.0f, 1.0f, 0, 0, 1.0f);
+        mpSound1 = MediaPlayer.create(SplashScreenActivity.this, R.raw.splashscreen);
+        mpSound1.start();
 
         new Handler().postDelayed(new Runnable() {
             @Override
